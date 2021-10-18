@@ -7,26 +7,44 @@
     <title>Formulaire agenda de Mourad</title>
     <link rel="stylesheet" href="agenda.css">
 </head>
+
 <body>
-<table class ="tableauagenda">
-<tr>
-<th>Lundi</th>
-<th>Mardi</th>
-<th>Mercredi</th>
-<th>Jeudi</th>
-<th>Vendredi</th>
-<th>Samedi</th>
-<th>Dimanche</th>
+<article>
+
+<div class= "formagenda">
+
+<form>
+<div id ="eventtitlediv">
+<label for="eventtitle">Ajouter un titre à l'évenement :</label>
+<input type="text" name="adress" id="adress" required> 
+<label for="adress">Ajouter un lieu à l'évenement :</label>
+<input type="text" name="adress" id="adress" required> 
+</div>
+
+<div id = "eventhoursdiv">
+<label for="eventhours">Date et heure de l'évenement :</label>
+<input type="datetime-local" id="eventhours"
+       name="eventhours" value="2021-10-18T19:30"
+       min="2021-10-18T00:00" max="2022-08-31T00:00">
+</div>
+
+<div id = "eventfreqdiv">
+<label for="eventfreq">Fréquence de l'évenement :</label>
+<select id="eventfreq" name="eventfreq">
+ <option value="once">Une seule fois</option>
+ <option value="everyday">Tous les jours</option>
+ <option value="everyweek">Chaque semaine</option>
+ <option value="everymonth">Tous les mois</option>
+</div>
+
+<div id ="submitformulaire">
+<input type="submit" value="Ajouter l'évenement à l'agenda"></div>
+</div>
 
 
-</tr>
-
-
-
-
-</table>
-
-
-
+</form>
+</article>
 </body>
+
+
 </html>
